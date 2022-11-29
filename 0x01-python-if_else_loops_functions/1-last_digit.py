@@ -2,16 +2,16 @@
 import random
 number = random.randint(-10000, 10000)
 
-#handling negative number
+# handling negative number
 flag = 0
 if number < 0:
     number *= -1
     flag = 1
 
-#calculating last digit
+# calculating last digit
 last_d = number % 10
 
-#last digit for negative number
+# last digit for negative number
 if flag:
     number *= -1
     last_d *= -1
