@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 from calculator_1 import add, sub, mul, div
-import sys
 
 
 def calculate(argv):
@@ -28,4 +27,5 @@ def calculate(argv):
 
 
 if __name__ == "__main__":
+    import sys
     calculate(sys.argv)
