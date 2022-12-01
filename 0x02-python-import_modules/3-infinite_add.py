@@ -8,6 +8,7 @@ def add_inf(argv):
     i = 1
     while i <= n:
         sum += int(argv[i])
+        i += 1
     print("{:d}".format(sum))
 
 
