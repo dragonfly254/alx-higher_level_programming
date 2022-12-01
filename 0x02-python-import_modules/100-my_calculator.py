@@ -9,9 +9,9 @@ def calculate(argv):
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
         exit(1)
 
-    a = argv[1]
+    a = int(argv[1])
     op = argv[2]
-    b = argv[3]
+    b = int(argv[3])
 
     if op == '+':
         print("{:d} {:s} {:d} = {:d}".format(a, op, b, add(a, b)))

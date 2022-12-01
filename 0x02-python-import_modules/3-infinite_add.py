@@ -11,6 +11,6 @@ def add_inf(argv):
     print("{:d}".format(sum))
 
 
-if __name__ = "__main__":
+if __name__ == "__main__":
     import sys
     add_inf(sys.argv)
