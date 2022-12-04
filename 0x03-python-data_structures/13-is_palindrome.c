@@ -29,9 +29,9 @@ int is_palindrome(listint_t **head)
 
 	s_idx = 0;
 	e_idx = len - 1;
-	while (s_idx != e_idx)
+	while (s_idx != e_idx && s_idx <= len / 2)
 	{
-		if (arr[s_idx] != arr[e_idx] && s_idx <= len / 2)
+		if (arr[s_idx] != arr[e_idx])
 			return (0);
 		s_idx++;
 		e_idx--;
