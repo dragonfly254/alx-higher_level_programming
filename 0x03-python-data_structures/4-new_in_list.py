@@ -12,8 +12,11 @@ def new_in_list(my_list, idx, element):
        original unmodified list if idx is negative or
        out of range.
     """
-    if idx < 0 or idx > len(m_list)-1:
+    if idx < 0:
         return my_list
+    if idx >= len(my_list):
+        return my_list
+
     new_list = my_list
     new_list[idx] = element
 
