@@ -1,0 +1,20 @@
+#!/usr/bin/python3
+def new_in_list(my_list, idx, element):
+    """New_in_list function
+
+    Args:
+        my_list: input list.
+        idx: index of the element to be changed.
+        element: new element.
+
+    Returns:
+       new modified list,
+       original unmodified list if idx is negative or
+       out of range.
+    """
+    if idx < 0 or idx > len(m_list)-1:
+        return my_list
+    new_list = my_list
+    new_list[idx] = element
+
+    return new_list
