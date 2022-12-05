@@ -1,6 +1,32 @@
 #include "lists.h"
 
 /**
+ * reverse_list - reverses a given list.
+ * @head: start of the list.
+ *
+ * Return: NULL if failed, head if successful.
+ */
+listint_t *reverse_list(listint_t *head)
+{
+	listint_t *p, *q;
+
+	if (head == NULL)
+		return;
+
+	p = head;
+	q = p->next;
+
+	if (q == NULL)
+		return;
+
+	q = reverse_list(q);
+	p->next->next = p;
+	p->next = NULL;
+
+	return (q);
+}
+
+/**
  * is_palindrome - checks if a singly linked list is a palindrome.
  * @head: head of the list.
  *
@@ -8,34 +34,40 @@
  */
 int is_palindrome(listint_t **head)
 {
-	listint_t *cur;
-	int s_idx, e_idx, len = 0;
+	listint_t *fp, *sp, *sec_start;
+
 	if (*(head) == NULL)
 		return (1);
 
-	cur = *(head);
-	while (cur)
-	{
-		len++;
-		cur = cur->next;
-	}
-	cur = *(head);
-	int i = 0, arr[len];
-	for (i; cur; i++)
-	{
-		arr[i] = cur->n;
-		cur = cur->next;
-	}
+	fp = *(head);
+	sp = *(head);
 
-	s_idx = 0;
-	e_idx = len - 1;
-	while (s_idx != e_idx && s_idx <= len / 2)
+	while (true)
 	{
-		if (arr[s_idx] != arr[e_idx])
+		fp = fp->next->next;
+		if (fp->next == NULL)
+		{
+			sec_start = sp->next->next;
+			break;
+		}
+		if (fp == NULL)
+		{
+			sec_start = sp->next;
+			break;
+		}
+		sp = sp->next;
+	}
+	sp->next = NULL;
+
+	listint_t *nsec_head = reverse_list(sec_start), *f_start = *(head);
+
+	while (f_start && nsec_start)
+	{
+		if (f_start->n != nsec_start->n)
 			return (0);
-		s_idx++;
-		e_idx--;
+		f_start = f_start->next;
+		nsec_start = nsec_start->next;
 	}
-
+	
 	return (1);
 }
