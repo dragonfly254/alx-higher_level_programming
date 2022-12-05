@@ -5,10 +5,7 @@ def print_matrix_integer(matrix=[[]]):
     Args:
         matrix: input matrix.
     """
-    if len(matrix) == 0:
-        print("", end="")
-        return
     for row in matrix:
         for col in row:
-            print("{:d} ".format(col), end="")
+            print(" ".join("{:d}".format(col) for col in row)
         print()
