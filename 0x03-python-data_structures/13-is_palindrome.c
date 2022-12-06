@@ -42,7 +42,7 @@ int is_palindrome(listint_t **head)
 	fp = *(head);
 	sp = *(head);
 
-	while (true)
+	while (1)
 	{
 		fp = fp->next->next;
 		if (fp->next == NULL)
@@ -59,7 +59,11 @@ int is_palindrome(listint_t **head)
 	}
 	sp->next = NULL;
 
-	listint_t *nsec_head = reverse_list(sec_start), *f_start = *(head);
+	listint_t *nsec_head; 
+	listint_t *f_start;
+
+	nsec_head = reverse_list(sec_start);
+	f_start = *(head);
 
 	while (f_start && nsec_start)
 	{
