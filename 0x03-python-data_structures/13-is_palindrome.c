@@ -11,13 +11,13 @@ listint_t *reverse_list(listint_t *head)
 	listint_t *p, *q;
 
 	if (head == NULL)
-		return;
+		return NULL;
 
 	p = head;
 	q = p->next;
 
 	if (q == NULL)
-		return;
+		return NULL;
 
 	q = reverse_list(q);
 	p->next->next = p;
