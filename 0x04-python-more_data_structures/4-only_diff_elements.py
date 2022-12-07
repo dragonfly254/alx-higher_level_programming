@@ -9,4 +9,4 @@ def only_diff_elements(set_1, set_2):
     Returns:
         set difference.
     """
-    return set_1 - set_2
+    return (set_2 - set_1) | (set_1 - set_2)

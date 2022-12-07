@@ -8,7 +8,10 @@ def update_dictionary(a_dictionary, key, value):
         value: new value.
 
     """
-    if key in a_dictionary.keys():
-        a_dictionary[key] = value
-    else:
-        a_dictionary[key] = value
+    new_dict = {}
+    for dkey, item in a_dictionary.items():
+        new_dict[dkey] = item
+
+    new_dict[key] = value
+
+    return new_dict

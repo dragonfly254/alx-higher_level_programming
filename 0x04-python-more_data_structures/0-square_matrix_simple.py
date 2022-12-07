@@ -10,5 +10,5 @@ def square_matrix_simple(matrix=[]):
         squared.
     """
 
-    new_matrix = [list(map(lambda x: x**2, (x for x in row))) for row in (matrix)]
+    new_matrix = [list(map(lambda x: x**2, (x for x in r))) for r in matrix]
     return new_matrix
