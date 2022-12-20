@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
 This module gives access to Square class and its
-functions.                                                        
+functions.
 """
 
 

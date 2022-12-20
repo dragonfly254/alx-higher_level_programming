@@ -14,7 +14,7 @@ class Square:
             size: size of the sides of the square.
         """
         if isinstance(size, int) and size >= 0:
-            slef.__size = size
+            self.__size = size
         elif not isinstance(size, int):
             raise TypeError("size must be an integer")
         elif size < 0:
