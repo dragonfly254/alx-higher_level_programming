@@ -1,7 +1,8 @@
 #!/usr/bin/python3
 """MagicClass module
 
-This module gives access to the MagicClass that does exactly the same as the given Python bytecode.
+This module gives access to the MagicClass that does exactly the
+same as the given Python bytecode.
 
 it has the following functions:
     *area - returns area of the circle

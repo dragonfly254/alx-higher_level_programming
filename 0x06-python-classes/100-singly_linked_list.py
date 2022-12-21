@@ -1,6 +1,12 @@
 #!/usr/bin/python3
-"""
-This module provides access to node and singly linked list class
+"""This module provides access to node and singly linked list class
+
+It contains class node for creating the nodes of the list and 
+class singly linked list for creatining the list.
+
+this file can be im[orted as amodule and has the follwing 
+functions:
+    *insert_sorted - inserts the node into the sorted linked list.
 """
 
 
