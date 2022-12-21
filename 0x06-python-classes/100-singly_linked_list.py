@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""this module provides access to node and singly linked list
+"""This module provides access to node and singly linked list
 classes
 """
 
