@@ -11,8 +11,11 @@ functions:
 
 
 class Node:
-    """
-    creates a node
+    """creates a node.
+
+    attributes:
+        __data (int): data to be store in the list.
+        __next_node (Node): the following node in the list.
     """
     def __init__(self, data, next_node=None):
         """node initializer.
