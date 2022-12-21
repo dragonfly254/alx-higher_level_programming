@@ -1,6 +1,4 @@
 #!/usr/bin/python3
-import math
-
 """MagicClass module
 
 This module gives access to the MagicClass that does exactly the same as the given Python bytecode.
@@ -9,6 +7,7 @@ it has the following functions:
     *area - returns area of the circle
     *circumference - which returns circumference of the circle
 """
+import math
 
 
 class MagicClass:
