@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 import math
+
 """this module give access to MagicClass"""
 
 
