@@ -4,8 +4,7 @@ This is a Rectangle module.
 
 methods:
     area(): returns the area of the rectangle.no args.
-    perimeter():returns the perimeter of the rectangle or 0 if
-        width or height ins 0. no args.
+    perimeter():returns the perimeter of the rectangle.
 """
 
 
