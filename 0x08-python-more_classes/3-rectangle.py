@@ -34,7 +34,7 @@ class Rectangle:
 
         Args:
             value: new value of width.
-        
+
         Raises:
             TypeError: if width is not an integer
             ValueError: if width is less than zero
@@ -55,6 +55,7 @@ class Rectangle:
 
         """
         return self.__height
+
     @height.setter
     def height(self, value):
         """modifies the height value.

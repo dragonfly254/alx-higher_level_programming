@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
 This module contains an algorithm that resolves the N-Queen puzzle using backtracking
+
 """
 
 def isSafe(m_queen, nqueen):
