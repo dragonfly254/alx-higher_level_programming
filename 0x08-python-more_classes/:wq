@@ -7,8 +7,6 @@ used in creating the instances of rectangle.
 
 It can be imported all used in ts own
 """
-
-
 class Rectangle:
     """creates empty rectangular class"""
     pass
