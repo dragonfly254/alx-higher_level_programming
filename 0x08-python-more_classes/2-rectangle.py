@@ -6,6 +6,7 @@ This is a Rectangle module.
 
 
 class Rectangle:
+    """defines rectangle"""
     def __init__(self, width=0, height=0):
         """initializes instances of the class.
 
