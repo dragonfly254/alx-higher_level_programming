@@ -7,7 +7,6 @@ if the new instance attribute is called first_name.
 
 
 class LockedClass:
-    """locked class"""
     __slots__ = ['first_name']
 
     def __init__(self):
