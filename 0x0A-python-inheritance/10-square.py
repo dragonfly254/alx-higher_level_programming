@@ -18,7 +18,3 @@ class Square(Rectangle):
     def area(self):
         """returns a string with the area """
         return super().area()
-
-s = Square(13)
-print(s)
-print(s.area())
