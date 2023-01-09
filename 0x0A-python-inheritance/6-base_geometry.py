@@ -6,7 +6,7 @@ This is a base geometry module.
 
 class BaseGeometry:
     """ base geometry class """
-    
+
     def area(self):
         """unimplimented area method
 
