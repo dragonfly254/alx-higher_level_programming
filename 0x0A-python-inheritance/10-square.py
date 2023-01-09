@@ -3,7 +3,7 @@
 The square module.
 
 """
-Rectangle = __import__('9-rectangle.py').Rectangle
+Rectangle = __import__('9-rectangle').Rectangle
 
 
 class Square(Rectangle):
@@ -18,3 +18,7 @@ class Square(Rectangle):
     def area(self):
         """returns a string with the area """
         return super().area()
+
+s = Square(13)
+print(s)
+print(s.area())
