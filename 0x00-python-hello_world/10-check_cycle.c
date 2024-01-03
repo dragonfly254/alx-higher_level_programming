@@ -8,14 +8,17 @@
  */
 int check_cycle(listint_t *list)
 {
+	listint_t *lug;
+	listint_t *lead;
+
 	if (list == NULL)
 		return (0);
 
 	if (list->next == NULL)
 		return (0);
 
-	listint_t *lug = list;
-	listint_t *lead = list->next;
+	lug = list;
+	lead = list->next;
 
 	while (lead != NULL && lead->next != NULL)
 	{
