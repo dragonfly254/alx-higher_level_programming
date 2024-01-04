@@ -2,6 +2,7 @@
 from calculator_1 import add, sub, mul, div
 import sys
 
+
 def main():
     args = sys.argv
     if len(args) - 1 != 3:
@@ -9,13 +10,13 @@ def main():
         exit(1)
     a = int(args[1])
     b = int(args[3])
-    op = args[2] 
+    op = args[2]
 
     ops = {
-            "+" : add,
-            "-" : sub,
-            "*" : mul,
-            "/" : div
+            "+": add,
+            "-": sub,
+            "*": mul,
+            "/": div
             }
 
     if op in ops.keys():
