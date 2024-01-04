@@ -4,7 +4,7 @@ import sys
 
 def infinite_add():
     infinite_sum = 0
-    
+
     for i in sys.argv[1:]:
         infinite_sum += int(i)
 
