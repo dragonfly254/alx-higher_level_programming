@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 import sys
 
+
 def main():
     len_arg = len(sys.argv) - 1
     if len_arg == 0:
@@ -14,6 +15,7 @@ def main():
 
     for i, arg in enumerate(sys.argv[1:]):
         print("{:d}: {}".format(i + 1, arg))
+
 
 if __name__ == "__main__":
     main()
