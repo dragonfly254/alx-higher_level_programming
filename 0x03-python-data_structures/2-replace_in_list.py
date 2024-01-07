@@ -2,9 +2,9 @@
 
 
 def replace_in_list(my_list, idx, element):
-    l = len(my_list) - 1
+    length = len(my_list) - 1
 
-    if idx < 0 or idx > l:
+    if idx < 0 or idx > length:
         return my_list
     my_list[idx] = element
     return my_list
