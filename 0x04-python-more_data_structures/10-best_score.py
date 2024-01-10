@@ -13,6 +13,8 @@ def best_score(a_dictionary):
         return None
 
     large_value = 0
+    large_key = None
+
     for key, value in a_dictionary.items():
         if value > large_value:
             large_value = value
