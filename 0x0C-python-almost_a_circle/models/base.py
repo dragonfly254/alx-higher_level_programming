@@ -107,7 +107,7 @@ class Base:
             writer = csv.writer(writeFile)
             writer.writerows(matrix)
 
-        @classmethod
+    @classmethod
     def load_from_file_csv(cls):
         """ Method that loads a CSV file """
         filename = "{}.csv".format(cls.__name__)
